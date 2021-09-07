@@ -90,3 +90,25 @@ function calcularAreaCuadrado() {
   const area = areaCuadrado(value);
   alert(area);
 }
+
+function perimetroTriangulo(){
+  const Adyacente = document.getElementById("Adyacente");
+  const Hipotenusa = document.getElementById("Hipotenusa");
+  const Opuesto = document.getElementById("Opuesto");
+
+}
+
+function areaTriangulo(){
+  const Altura = document.getElementById("Altura");
+  const Adyacente = document.getElementById("Adyacente");
+}
+
+function diametroCirculo(){
+  const Radio = document.getElementById("Radio");
+}
+function PerimetrooCirculo(){
+  const Radio = document.getElementById("Radio");
+}
+function areaCirculo(){
+  const Radio = document.getElementById("Radio");
+}

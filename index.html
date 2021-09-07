@@ -5,65 +5,70 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
   <title>Figuras geométricas | Curso Práctico de JavaScript en Platzi</title>
+  <script src="./engine.js"></script>
 </head>
 
 <body>
   <main class="main">
-    <div class="main__figuras_geometricas">
+    <section class="main__figuras_geometricas">
       <h1 class="h1-title">FIGURAS GEOMETRICAS</h1>
 
 
-      <div class="main__container--Cuadro">
-        <h2 class="container__title">Cuadro</h2>
-        <div class="inputs">
-          <input type="text" class="container__input" placeholder="Lado">
+      <section class="main__containers">
+        <div class="main__container">
+          <h2 class="container__title">Cuadro</h2>
+          <div class="inputs">
+            <input id="InputCuadrado" type="text" class="container__input" placeholder="Lado">
+          </div>
+          <button class="container__button" onclick="calcularPerimetroCuadrado()">
+            Perimetro de un Cuadrado
+          </button>
+          <button class="container__button" onclick="calcularAreaCuadrado()">
+            Area de un Cuadrado
+          </button>
         </div>
-        <button class="container__button" onclick="">
-          Perimetro de un Cuadrado          
-        </button>
-        <button class="container__button" onclick="">
-          Area de un Cuadrado
-        </button>
-      </div>
 
-      <div class="main__container--Triangulo">
-        <h2 class="container__title">Triangulo</h2>
-        <div class="inputs">          
-          <input type="text" class="container__input" placeholder="Adyacente">
-          <input type="text" class="container__input" placeholder="Opuesto">
-          <input type="text" class="container__input" placeholder="Hipotenusa">
-          <input type="text" class="container__input" placeholder="Altura">
+
+        <div class="main__container">
+          <h2 class="container__title">Triangulo</h2>
+          <div class="inputs">
+            <input id="Adyacente" type="text" class="container__input" placeholder="Adyacente">
+            <input id="Opuesto" type="text" class="container__input" placeholder="Opuesto">
+            <input id="Hipotenusa" type="text" class="container__input" placeholder="Hipotenusa">
+            <input id="Altura" type="text" class="container__input" placeholder="Altura">
+          </div>
+          <button class="container__button" onclick="perimetroTriangulo()">
+            Perimetro de un Triangulo
+          </button>
+          <button class="container__button" onclick="areaTriangulo()">
+            Area de un Triangulo
+          </button>
         </div>
-        <button class="container__button" onclick="">
-          Perimetro de un Triangulo
-        </button>
-        <button class="container__button" onclick="">
-          Area de un Triangulo
-        </button>
-      </div>
 
-      <div class="main__container--Circulo">
-        <h2 class="container__title">Circulo</h2>
-        <div class="inputs">          
-          <input type="text" class="container__input" placeholder="Radio">
+
+        <div class="main__container">
+          <h2 class="container__title">Circulo</h2>
+          <div class="inputs">
+            <input id="Radio" type="text" class="container__input" placeholder="Radio">
+          </div>
+          <button class="container__button" onclick="PerimetrooCirculo()">
+            Perimetro de un Circulo
+          </button>
+          <button class="container__button" onclick="areaCirculo()">
+            Area de un Circulo
+          </button>
+          <button class="container__button" onclick="diametroCirculo()">
+            Diametro de un Circulo
+          </button>
         </div>
-        <button class="container__button" onclick="">
-          Perimetro de un Circulo
-        </button>
-        <button class="container__button" onclick="">
-          Area de un Circulo
-        </button>
-        <button class="container__button" onclick="">
-          Diametro de un Circulo
-        </button>
-      </div>
+      </section>
 
 
-    </div>
+    </section>
   </main>
 
-  <script src="./engine.js"></script>
 </body>
 
 </html>

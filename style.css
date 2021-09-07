@@ -1,0 +1,27 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+
+.main__figuras_geometricas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__containers{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.main__container{
+    display: flex;
+    flex-direction: column;
+}
+.main__container *{
+    box-shadow: ;
+    margin: 5px;
+}
