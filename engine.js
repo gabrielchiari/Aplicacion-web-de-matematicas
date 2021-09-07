@@ -84,31 +84,43 @@ function calcularPerimetroCuadrado() {
   alert(perimetro);
 }
 function calcularAreaCuadrado() {
-  const input = document.getElementById("InputCuadrado");
-  const value = input.value;
+  const Lado = document.getElementById("Lado").value;
 
-  const area = areaCuadrado(value);
+  const area = areaCuadrado(Lado);
   alert(area);
 }
 
-function perimetroTriangulo(){
-  const Adyacente = document.getElementById("Adyacente");
-  const Hipotenusa = document.getElementById("Hipotenusa");
-  const Opuesto = document.getElementById("Opuesto");
-
+function calperimetroTriangulo(){
+  const Adyacente = document.getElementById("Adyacente").value;
+  const Hipotenusa = document.getElementById("Hipotenusa").value;
+  const Opuesto = document.getElementById("Opuesto").value;
+  const perimetro = perimetroTriangulo(Opuesto,Hipotenusa,Adyacente);
+  alert(perimetro)
 }
 
-function areaTriangulo(){
-  const Altura = document.getElementById("Altura");
-  const Adyacente = document.getElementById("Adyacente");
+function calareaTriangulo(){
+  const Altura = document.getElementById("Altura").value;
+  const Adyacente = document.getElementById("Adyacente").value;
+
+  const area = areaTriangulo(Adyacente,Altura)
+  alert(area)
 }
 
-function diametroCirculo(){
-  const Radio = document.getElementById("Radio");
+function caldiametroCirculo(){
+  const Radio = document.getElementById("Radio").value;
+
+  const diametro = diametroCirculo(Radio);
+  alert(diametro);
 }
-function PerimetrooCirculo(){
-  const Radio = document.getElementById("Radio");
+function calperimetrooCirculo(){
+  const Radio = document.getElementById("Radio").value;
+
+  const perimetro = perimetroCirculo(Radio);
+  alert(perimetro);
 }
-function areaCirculo(){
-  const Radio = document.getElementById("Radio");
+function calareaCirculo(){
+  const Radio = document.getElementById("Radio").value;
+
+  const area = areaCirculo(Radio);
+  alert(area);
 }

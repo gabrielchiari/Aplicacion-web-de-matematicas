@@ -13,19 +13,19 @@
 <body>
   <main class="main">
     <section class="main__figuras_geometricas">
-      <h1 class="h1-title">FIGURAS GEOMETRICAS</h1>
+      <h1 class="h1-title">FIGURAS GEOMETRICAS.</h1>
 
 
       <section class="main__containers">
         <div class="main__container">
           <h2 class="container__title">Cuadro</h2>
           <div class="inputs">
-            <input id="InputCuadrado" type="text" class="container__input" placeholder="Lado">
+            <input id="Lado" type="Number" class="container__input" placeholder="Lado">
           </div>
-          <button class="container__button" onclick="calcularPerimetroCuadrado()">
+          <button type="button" class="container__button" onclick="calcularPerimetroCuadrado()">
             Perimetro de un Cuadrado
           </button>
-          <button class="container__button" onclick="calcularAreaCuadrado()">
+          <button type="button" class="container__button" onclick="calcularAreaCuadrado()">
             Area de un Cuadrado
           </button>
         </div>
@@ -34,15 +34,15 @@
         <div class="main__container">
           <h2 class="container__title">Triangulo</h2>
           <div class="inputs">
-            <input id="Adyacente" type="text" class="container__input" placeholder="Adyacente">
-            <input id="Opuesto" type="text" class="container__input" placeholder="Opuesto">
-            <input id="Hipotenusa" type="text" class="container__input" placeholder="Hipotenusa">
-            <input id="Altura" type="text" class="container__input" placeholder="Altura">
+            <input id="Adyacente" type="Number" class="container__input" placeholder="Adyacente">
+            <input id="Opuesto" type="Number" class="container__input" placeholder="Opuesto">
+            <input id="Hipotenusa" type="Number" class="container__input" placeholder="Hipotenusa">
+            <input id="Altura" type="Number" class="container__input" placeholder="Altura">
           </div>
-          <button class="container__button" onclick="perimetroTriangulo()">
+          <button type="button" class="container__button" onclick="calperimetroTriangulo()">
             Perimetro de un Triangulo
           </button>
-          <button class="container__button" onclick="areaTriangulo()">
+          <button type="button" class="container__button" onclick="calareaTriangulo()">
             Area de un Triangulo
           </button>
         </div>
@@ -51,15 +51,15 @@
         <div class="main__container">
           <h2 class="container__title">Circulo</h2>
           <div class="inputs">
-            <input id="Radio" type="text" class="container__input" placeholder="Radio">
+            <input id="Radio" type="Number" class="container__input" placeholder="Radio">
           </div>
-          <button class="container__button" onclick="PerimetrooCirculo()">
+          <button type="button" class="container__button" onclick="calperimetrooCirculo()">
             Perimetro de un Circulo
           </button>
-          <button class="container__button" onclick="areaCirculo()">
+          <button type="button" class="container__button" onclick="calareaCirculo()">
             Area de un Circulo
           </button>
-          <button class="container__button" onclick="diametroCirculo()">
+          <button type="button" class="container__button" onclick="caldiametroCirculo()">
             Diametro de un Circulo
           </button>
         </div>
