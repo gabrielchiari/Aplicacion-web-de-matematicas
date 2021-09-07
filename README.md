@@ -21,4 +21,4 @@
 - Segundo paso: implementar la fórmulas en JavaScript 
 - Tercer paso: crear funciones
 - Cuarto paso: integrar JS con HTML
-# curso-practico-javascript
+# curso-practico-javascriptse cambio la forma de tratar al proyecto taller primero realizare la parte de las figuras geometricas, luego hare cada parte hasta terminarlas todas y luego las unire cada uno se realizara buenas ramas para manejar mejor el proyecto
