@@ -1,56 +1,30 @@
-// Código del cuadrado
-console.group("Cuadrados");
-// const ladoCuadrado = 5;
-// console.log("Los lados del cuadrado miden: " + ladoCuadrado + "cm");
+//Codigo de del cuadrado
 
+// perimetro cuadrado
 function perimetroCuadrado(lado) {
   return lado * 4;
 }
-// console.log("El perímetro del cuadrado es: " + perimetroCuadrado + "cm");
 
+//area cuadrado
 function areaCuadrado(lado) {
   return lado * lado;
 }
-// console.log("El área del cuadrado es: " + areaCuadrado + "cmˆ2");
-console.groupEnd();
+
 
 // Código del triángulo
-console.group("Triángulos");
 
-// const ladoTriangulo1 = 6;
-// const ladoTriangulo2 = 6;
-// const baseTriangulo = 4;
-// console.log(
-//   "Los lados del triángulo miden: "
-//   + ladoTriangulo1
-//   + "cm, "
-//   + ladoTriangulo2
-//   + "cm, "
-//   + baseTriangulo
-//   + "cm"
-// );
-
-// const alturaTriangulo = 5.5;
-// console.log("La altura del triángulo es de: " + alturaTriangulo + "cm");
-
+//perimetro de triangulo
 function perimetroTriangulo(opuesto, hipotenusa, adyacente) {
   return opuesto + hipotenusa + adyacente;
 }
-// console.log("El perímetro del triángulo es: " + perimetroTriangulo + "cm");
 
+//area de triangulo
 function areaTriangulo(adyacente, altura) {
   return (adyacente * altura) / 2;
 }
-console.log("El área del triángulo es: " + areaTriangulo + "cmˆ2");
 
-console.groupEnd();
 
 // Código del círculo
-console.group("Círculos");
-
-// Radio
-// const radioCirculo = 4;
-// console.log("El radio del círculo es: " + radioCirculo + "cm");
 
 // Diámetro
 function diametroCirculo(radio) {
@@ -72,7 +46,7 @@ function areaCirculo(radio) {
   return (radio * radio) * PI;
 }
 
-console.groupEnd();
+
 
 
 // Aquí interactuamos con el HTML
