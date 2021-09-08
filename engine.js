@@ -1,4 +1,4 @@
-//Codigo de del cuadrado
+//Codigo de del cuadrado ------------------------------------------
 
 // perimetro cuadrado
 function perimetroCuadrado(lado) {
@@ -11,7 +11,7 @@ function areaCuadrado(lado) {
 }
 
 
-// Código del triángulo
+// Código del triángulo --------------------------------------------
 
 //perimetro de triangulo
 function perimetroTriangulo(opuesto, hipotenusa, adyacente) {
@@ -24,16 +24,14 @@ function areaTriangulo(adyacente, altura) {
 }
 
 
-// Código del círculo
+// Código del círculo ------------------------------------------------
 
-// Diámetro
+const PI = Math.PI;
+
+// Diametro
 function diametroCirculo(radio) {
   return radio * 2;
 }
-
-// PI
-const PI = Math.PI;
-console.log("PI es: " + PI);
 
 // Circunferencia
 function perimetroCirculo(radio) {
@@ -47,11 +45,14 @@ function areaCirculo(radio) {
 }
 
 
-
+/* -----------------------------------------------------------------
 
 // Aquí interactuamos con el HTML
+
+------------------------------------------------------------------- */
+// Cuadrado -------------------------------------------------------
 function calcularPerimetroCuadrado() {
-  const input = document.getElementById("InputCuadrado");
+  const input = document.getElementById("Lado");
   const value = input.value;
 
   const perimetro = perimetroCuadrado(value);
@@ -64,22 +65,23 @@ function calcularAreaCuadrado() {
   alert(area);
 }
 
+//triangulo ------------------------------------------------------
 function calperimetroTriangulo(){
-  const Adyacente = document.getElementById("Adyacente").value;
-  const Hipotenusa = document.getElementById("Hipotenusa").value;
-  const Opuesto = document.getElementById("Opuesto").value;
+  const Adyacente = parseInt(document.getElementById("Adyacente").value);
+  const Hipotenusa = parseInt(document.getElementById("Hipotenusa").value);
+  const Opuesto = parseInt(document.getElementById("Opuesto").value);
   const perimetro = perimetroTriangulo(Opuesto,Hipotenusa,Adyacente);
-  alert(perimetro)
+  alert(perimetro);
 }
-
 function calareaTriangulo(){
   const Altura = document.getElementById("Altura").value;
   const Adyacente = document.getElementById("Adyacente").value;
 
-  const area = areaTriangulo(Adyacente,Altura)
-  alert(area)
+  const area = areaTriangulo(Adyacente,Altura);
+  alert(area);
 }
 
+//circulo ---------------------------------------------------------
 function caldiametroCirculo(){
   const Radio = document.getElementById("Radio").value;
 
