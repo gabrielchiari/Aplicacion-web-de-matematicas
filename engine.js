@@ -108,16 +108,18 @@ Calcular el area de un triangulo Isoseles
 --------------------------------------------------------------------
 */
 function area__triangulo_isoseles(Lado1, Lado2){
-  let raiz_cuadrada = Math.sqrt();
-  const exponente = Math.pow();
-  area =  (Lado1*raiz_cuadrada(exponente(Lado2,2)-(exponente(Lado1,2)/4)))/2;
+  let sqrt = Math.sqrt();
+  const exponente = Math.pow();\
+
+  area = (Lado1*sqrt(exponente(Lado2,2)-(exponente(Lado1,2)/4)))/2;
   alert(area);
 }
 function checkin_triangulo_isoseles(){
+  //declaracion de variables
   const Adyacente = parseInt(document.getElementById("Adyacente").value);
   const Hipotenusa = parseInt(document.getElementById("Hipotenusa").value);
   const Opuesto = parseInt(document.getElementById("Opuesto").value);
-
+  //condicionales
   if(Opuesto == Hipotenusa){
     area__triangulo_isoseles(Opuesto, Hipotenusa);
   }
