@@ -100,3 +100,34 @@ function calareaCirculo(){
   const area = areaCirculo(Radio);
   alert(area);
 }
+
+
+/*
+RETO----------------------------------------------------------------
+Calcular el area de un triangulo Isoseles
+--------------------------------------------------------------------
+*/
+function area__triangulo_isoseles(Lado1, Lado2){
+  let raiz_cuadrada = Math.sqrt();
+  const exponente = Math.pow();
+  area =  (Lado1*raiz_cuadrada(exponente(Lado2,2)-(exponente(Lado1,2)/4)))/2;
+  alert(area);
+}
+function checkin_triangulo_isoseles(){
+  const Adyacente = parseInt(document.getElementById("Adyacente").value);
+  const Hipotenusa = parseInt(document.getElementById("Hipotenusa").value);
+  const Opuesto = parseInt(document.getElementById("Opuesto").value);
+
+  if(Opuesto == Hipotenusa){
+    area__triangulo_isoseles(Opuesto, Hipotenusa);
+  }
+  else if (Opuesto == Adyacente) {
+    area__triangulo_isoseles(Opuesto, Adyacente);
+  }
+  else if (Hipotenusa == Adyacente) {
+    area__triangulo_isoseles(Hipotenusa, Adyacente);
+  } 
+  else{
+    alert("Este triangulo no es un Triangulo Isoseles")
+  }
+}
